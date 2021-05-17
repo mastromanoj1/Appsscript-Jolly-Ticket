@@ -1,5 +1,5 @@
 # Jolly-Ticket
-Wriiten in : AppsScript , HTML , CSS , JAVASCRIPT .  <br>
+Written in : AppsScript , HTML , CSS , JAVASCRIPT .  <br>
 Aim : Create a web app to convert customer's data into Receipt or Ticket.....<br>
 Used apps : Google sheet,Google drive<br><hr>
 
