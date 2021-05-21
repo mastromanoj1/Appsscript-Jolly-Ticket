@@ -1,0 +1,794 @@
+  <script>
+function hari(){
+
+    var date = document.getElementById("date").value;
+    
+      google.script.run.withSuccessHandler(function(dog) 
+          {                      
+            var sanjeet = dog.replace(/"/g,"");
+            document.getElementById("display_error").innerHTML = sanjeet;
+              var n=0;
+  
+              for(g=1 ; g <= 41 ; g++)
+              {
+                document.getElementById("seat"+g).disabled = false;}
+  
+              for(m=0;m<=41;m++)
+              {
+              var z = sanjeet.split(','); 
+              document.getElementById("seat"+z[n]).disabled = true;
+              n++;
+              }
+  
+           }).Kickstart(date);
+  
+  }
+  
+  
+  function saru(){
+  
+    google.script.run.withSuccessHandler(function(fly) {
+  
+  
+            var bc1    = fly[0][0];
+            var bc2    = fly[1][0];
+            var bc3    = fly[2][0];
+            var bc4    = fly[3][0];
+            var bc5    = fly[4][0];
+            var bc6    = fly[5][0];
+            var bc7    = fly[6][0];
+            var bc8    = fly[7][0];
+            var bc9    = fly[8][0];
+            var bc10   = fly[9][0];
+            var bc11  = fly[10][0];
+            var bc12  = fly[11][0];  
+            var bc13  = fly[12][0];  
+            var bc14  = fly[13][0]; 
+            var bc15  = fly[14][0]; 
+  
+            var bct1    = fly[0][1];
+            var bct2    = fly[1][1];
+            var bct3    = fly[2][1];
+            var bct4    = fly[3][1];
+            var bct5    = fly[4][1];
+            var bct6    = fly[5][1];
+            var bct7    = fly[6][1];
+            var bct8    = fly[7][1];
+            var bct9    = fly[8][1];
+            var bct10   = fly[9][1];
+            var bct11  = fly[10][1];
+            var bct12  = fly[11][1];  
+            var bct13  = fly[12][1];  
+            var bct14  = fly[13][1]; 
+            var bct15  = fly[14][1]; 
+  
+  
+            var be1 = fly[0][2];
+            var be2 = fly[1][2];
+            var be3 = fly[2][2];
+            var be4 = fly[3][2];
+            var be5 = fly[4][2];
+            var be6 = fly[5][2];
+            var be7 = fly[6][2];
+            var be8 = fly[7][2];
+            var be9 = fly[8][2];
+            var be10 = fly[9][2];
+            var be11 = fly[10][2];
+            var be12 = fly[11][2];
+            var be13 = fly[12][2];
+            var be14 = fly[13][2];
+            var be15 = fly[14][2];
+  
+  
+  
+  
+           var bet1   =  fly [0][3] ;
+           var bet2   =  fly [1][3] ;
+           var bet3   =  fly [2][3] ;
+           var bet4   =  fly [3][3] ;
+           var bet5   =  fly [4][3] ;
+           var bet6   =  fly [5][3] ;
+           var bet7   =  fly [6][3] ;
+           var bet8   =  fly [7][3] ;
+           var bet9   =  fly [8][3] ;
+           var bet10  =  fly [9][3] ;
+           var bet11  =  fly [10][3] ;
+           var bet12   =  fly[11][3];
+           var bet13   =  fly[12][3];
+           var bet14   =  fly[13][3];
+           var bet15   =  fly[14][3];
+           
+  
+  
+  
+  
+           var boarding = document.getElementById("boarding").value;
+  
+              // boarding Erode
+              if(boarding == be1)
+              {document.getElementById("boardingtime").value = bet1 ;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be2 ) 
+              {document.getElementById("boardingtime").value = bet2;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be3 ) 
+              {document.getElementById("boardingtime").value = bet3;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be4 ) 
+              {document.getElementById("boardingtime").value = bet4;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be5 ) 
+              {document.getElementById("boardingtime").value = bet5;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be6 ) 
+              {document.getElementById("boardingtime").value = bet6;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be7 ) 
+              {document.getElementById("boardingtime").value = bet7;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be8 ) 
+              {document.getElementById("boardingtime").value = bet8;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be9 ) 
+              {document.getElementById("boardingtime").value = bet9;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be10 ) 
+              {document.getElementById("boardingtime").value = bet10;
+              document.getElementById("travel").value = "t1";}
+              else if (boarding == be11 ) 
+              {document.getElementById("boardingtime").value = bet11;
+              document.getElementById("travel").value = "t1";}
+  
+              // Boarding Chennai
+              else if(boarding == bc1)
+              {document.getElementById("boardingtime").value = bct1 ;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc2 ) 
+              {document.getElementById("boardingtime").value = bct2;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc3 ) 
+              {document.getElementById("boardingtime").value = bct3;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc4 ) 
+              {document.getElementById("boardingtime").value = bct4;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc5 ) 
+              {document.getElementById("boardingtime").value = bct5;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc6 ) 
+              {document.getElementById("boardingtime").value = bct6;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc7 ) 
+              {document.getElementById("boardingtime").value = bct7;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc8 ) 
+              {document.getElementById("boardingtime").value = bct8;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc9 ) 
+              {document.getElementById("boardingtime").value = bct9;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc10 ) 
+              {document.getElementById("boardingtime").value = bct10;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc11 ) 
+              {document.getElementById("boardingtime").value = bct11;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc12 ) 
+              {document.getElementById("boardingtime").value = bct12;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc13 ) 
+              {document.getElementById("boardingtime").value = bct13;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc14 ) 
+              {document.getElementById("boardingtime").value = bct14;
+              document.getElementById("travel").value = "t2";}
+              else if (boarding == bc15 ) 
+              {document.getElementById("boardingtime").value = bct15;
+              document.getElementById("travel").value = "t2";}       
+  
+  
+            }).Tpick();
+  
+  }
+  
+  
+         function Mighty(){
+  
+            google.script.run.withSuccessHandler(function(fly) {
+  
+            var dc1    = fly[0][4];
+            var dc2    = fly[1][4];
+            var dc3    = fly[2][4];
+            var dc4    = fly[3][4];
+            var dc5    = fly[4][4];
+            var dc6    = fly[5][4];
+            var dc7    = fly[6][4];
+            var dc8    = fly[7][4];
+            var dc9    = fly[8][4];
+            var dc10   = fly[9][4];
+            var dc11  = fly[10][4];
+            var dc12  = fly[11][4];  
+            var dc13  = fly[12][4];  
+            var dc14  = fly[13][4]; 
+            var dc15  = fly[14][4]; 
+  
+            var dct1    = fly[0][5];
+            var dct2    = fly[1][5];
+            var dct3    = fly[2][5];
+            var dct4    = fly[3][5];
+            var dct5    = fly[4][5];
+            var dct6    = fly[5][5];
+            var dct7    = fly[6][5];
+            var dct8    = fly[7][5];
+            var dct9    = fly[8][5];
+            var dct10   = fly[9][5];
+            var dct11  = fly[10][5];
+            var dct12  = fly[11][5];  
+            var dct13  = fly[12][5];  
+            var dct14  = fly[13][5]; 
+            var dct15  = fly[14][5]; 
+  
+            var de1 = fly[0][6];
+            var de2 = fly[1][6];
+            var de3 = fly[2][6];
+            var de4 = fly[3][6];
+            var de5 = fly[4][6];
+            var de6 = fly[5][6];
+            var de7 = fly[6][6];
+            var de8 = fly[7][6];
+            var de9 = fly[8][6];
+            var de10 = fly[9][6];
+            var de11 = fly[10][6];
+            var de12 = fly[11][6];
+            var de13 = fly[12][6];
+            var de14 = fly[13][6];
+            var de15 = fly[14][6];
+  
+           var det1   =  fly [0][7] ;
+           var det2   =  fly [1][7] ;
+           var det3   =  fly [2][7] ;
+           var det4   =  fly [3][7] ;
+           var det5   =  fly [4][7] ;
+           var det6   =  fly [5][7] ;
+           var det7   =  fly [6][7] ;
+           var det8   =  fly [7][7] ;
+           var det9   =  fly [8][7] ;
+           var det10  =  fly [9][7] ;
+           var det11  =  fly [10][7] ;
+           var det12   =  fly[11][7];
+           var det13   =  fly[12][7];
+           var det14   =  fly[13][7];
+           var det15   =  fly[14][7];
+           
+  
+  
+  
+           var droping = document.getElementById("droping").value;
+  
+  
+  
+  
+  
+              // Droping Chennai
+               if(droping == dc1)
+              {document.getElementById("dropingtime").value = dct1 ;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc2 ) 
+              {document.getElementById("dropingtime").value = dct2;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc3 ) 
+              {document.getElementById("dropingtime").value = dct3;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc4 ) 
+              {document.getElementById("dropingtime").value = dct4;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc5 ) 
+              {document.getElementById("dropingtime").value = dct5;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc6 ) 
+              {document.getElementById("dropingtime").value = dct6;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc7 ) 
+              {document.getElementById("dropingtime").value = dct7;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc8 ) 
+              {document.getElementById("dropingtime").value = dct8;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc9 ) 
+              {document.getElementById("dropingtime").value = dct9;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc10 ) 
+              {document.getElementById("dropingtime").value = dct10;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc11 ) 
+              {document.getElementById("dropingtime").value = dct11;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc12 ) 
+              {document.getElementById("dropingtime").value = dct12;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc13 ) 
+              {document.getElementById("dropingtime").value = dct13;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc14 ) 
+              {document.getElementById("dropingtime").value = dct14;
+              document.getElementById("travel").value = "t1";}
+              else if (droping == dc15 ) 
+              {document.getElementById("dropingtime").value = dct15;
+              document.getElementById("travel").value = "t1";}
+  
+              // Droping Erode : 
+              else if(droping == de1)
+              {document.getElementById("dropingtime").value = det1 ;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de2 ) 
+              {document.getElementById("dropingtime").value = det2;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de3 ) 
+              {document.getElementById("dropingtime").value = det3;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de4 ) 
+              {document.getElementById("dropingtime").value = det4;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de5 ) 
+              {document.getElementById("dropingtime").value = det5;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de6 ) 
+              {document.getElementById("dropingtime").value = det6;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de7 ) 
+              {document.getElementById("dropingtime").value = det7;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de8 ) 
+              {document.getElementById("dropingtime").value = det8;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de9 ) 
+              {document.getElementById("dropingtime").value = det9;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de10 ) 
+              {document.getElementById("dropingtime").value = det10;
+              document.getElementById("travel").value = "t2";}
+              else if (droping == de11 ) 
+              {document.getElementById("dropingtime").value = det11;
+              document.getElementById("travel").value = "t2";}
+              }).Tpick();
+          
+            }
+  
+  
+  
+  
+        function AddRow()
+        {
+          document.getElementById("add_button").disabled = true;
+           document.getElementById("display_error").innerHTML = "";
+            document.getElementById("msg").value = '';
+  
+          var firstname = document.getElementById("firstname").value;
+  
+          var x = document.getElementById("boarding").selectedIndex;
+          var y = document.getElementById("boarding").options;
+          var boarding = y[x].text;
+  
+          var date = document.getElementById("date").value;
+  
+          var boardingvalue = document.getElementById("boarding").value;
+          var boardingtime = document.getElementById("boardingtime").value;
+  
+          var x = document.getElementById("droping").selectedIndex;
+          var y = document.getElementById("droping").options;
+          var droping = y[x].text;
+  
+          var dropingvalue = document.getElementById("droping").value;        
+          var dropingtime = document.getElementById("dropingtime").value;
+  
+          var phonenumber = document.getElementById("phonenumber").value;
+          var n = phonenumber.length;
+  
+          var travel = document.getElementById("travel").value;
+  
+          var textseat = document.getElementById("selectedseat").value;
+  
+          var seat1 = document.getElementById("seat1");
+          var seat2 = document.getElementById("seat2");
+          var seat3 = document.getElementById("seat3");
+          var seat4 = document.getElementById("seat4");
+          var seat5 = document.getElementById("seat5");
+          var seat6 = document.getElementById("seat6");
+          var seat7 = document.getElementById("seat7");
+          var seat8 = document.getElementById("seat8");
+          var seat9 = document.getElementById("seat9");
+          var seat10 = document.getElementById("seat10");
+          var seat11 = document.getElementById("seat11");
+          var seat12 = document.getElementById("seat12");
+          var seat13 = document.getElementById("seat13");
+          var seat14 = document.getElementById("seat14");
+          var seat15 = document.getElementById("seat15");
+          var seat16 = document.getElementById("seat16");
+          var seat17 = document.getElementById("seat17");
+          var seat18 = document.getElementById("seat18");
+          var seat19 = document.getElementById("seat19");
+          var seat20 = document.getElementById("seat20");
+          var seat21 = document.getElementById("seat21");
+          var seat22 = document.getElementById("seat22");
+          var seat23 = document.getElementById("seat23");
+          var seat24 = document.getElementById("seat24");
+          var seat25 = document.getElementById("seat25");
+          var seat26 = document.getElementById("seat26");
+          var seat27 = document.getElementById("seat27");
+          var seat28 = document.getElementById("seat28");
+          var seat29 = document.getElementById("seat29");
+          var seat30 = document.getElementById("seat30");
+          var seat31 = document.getElementById("seat31");
+          var seat32 = document.getElementById("seat32");
+          var seat33 = document.getElementById("seat33");
+          var seat34 = document.getElementById("seat34");
+          var seat35 = document.getElementById("seat35");
+          var seat36 = document.getElementById("seat36");
+          var seat37 = document.getElementById("seat37");
+          var seat38 = document.getElementById("seat38");
+          var seat39 = document.getElementById("seat39");
+          var seat40 = document.getElementById("seat40");
+          var seat41 = document.getElementById("seat41");
+                 
+          var play = [seat1,seat2,seat3,seat4,seat5,seat6,seat7,seat8,seat9,seat10,
+          seat11,seat12,seat13,seat14,seat15,seat16,seat17,seat18,seat19,seat20,
+          seat21,seat22,seat23,seat24,seat25,seat26,seat27,seat28,seat29,seat30,
+          seat31,seat32,seat33,seat34,seat35,seat36,seat37,seat38,seat39,seat40,seat41];
+  
+          var got = [];
+          var j = 0;
+  
+                for(i=0;i<play.length;i++)
+                {
+                  if(play[i].checked == true)
+                  {               
+                     got[j] = [play[i].value];
+                     j++;              
+                  }
+                }
+  
+  
+               document.getElementById("selectedseat").value = got;       
+  
+          if(firstname != '' && boardingvalue != '' && boardingtime != '' && dropingvalue != '' && dropingtime != ''
+           && phonenumber != '' &&  textseat != '' && travel != '' && date != '')
+                {
+                      if( n <= 1)
+                      {
+                        document.getElementById("display_error").innerHTML="Check Phone number";
+                        document.getElementById("add_button").disabled = false;
+                      }
+  
+                      else
+                      {
+                          google.script.run.withSuccessHandler(function(return_string) 
+                          {
+                            document.getElementById("add_button").disabled = false;
+                          }).AddRecord(firstname, boarding, boardingtime, droping, dropingtime, phonenumber, textseat,date);  
+                              
+                          google.script.run.withSuccessHandler(function(return_string) {}).Printticket();
+                          timer();
+                                      
+                      }
+                }
+  
+          else
+                {           
+                               
+                  document.getElementById("display_error").innerHTML = "Please Enter All Information!";
+                  document.getElementById("add_button").disabled = false;
+                }
+         
+         }
+  
+     
+        
+  
+        function ClearRecord()
+        {  
+            // document.getElementById("playerlist").style.visibility = "hidden";
+            document.getElementById("boarding").disabled = true;
+            document.getElementById("droping").disabled = true;
+            
+            var be3 = document.getElementById("be3");
+            var be4 = document.getElementById("be4");
+            var be5 = document.getElementById("be5");
+            var be6 = document.getElementById("be6");
+            var be7 = document.getElementById("be7");
+            var be8 = document.getElementById("be8");
+            var be9 = document.getElementById("be9");
+            var be10 = document.getElementById("be10");
+            var be11 = document.getElementById("be11");
+            var be12 = document.getElementById("be12");
+            var be13 = document.getElementById("be13");
+            var be14 = document.getElementById("be14");
+            var be15 = document.getElementById("be15");
+  
+            var bc3 = document.getElementById("bc3");
+            var bc4 = document.getElementById("bc4");
+            var bc5 = document.getElementById("bc5");
+            var bc6 = document.getElementById("bc6");
+            var bc7 = document.getElementById("bc7");
+            var bc8 = document.getElementById("bc8");
+            var bc9 = document.getElementById("bc9");
+            var bc10 = document.getElementById("bc10");
+            var bc11 = document.getElementById("bc11");
+            var bc12 = document.getElementById("bc12");
+            var bc13 = document.getElementById("bc13");
+            var bc14 = document.getElementById("bc14");
+            var bc15 = document.getElementById("bc15");
+  
+            var de3 = document.getElementById("de3");
+            var de4 = document.getElementById("de4");
+            var de5 = document.getElementById("de5");
+            var de6 = document.getElementById("de6");
+            var de7 = document.getElementById("de7");
+            var de8 = document.getElementById("de8");
+            var de9 = document.getElementById("de9");
+            var de10 = document.getElementById("de10");
+            var de11 = document.getElementById("de11");
+            var de12 = document.getElementById("de12");
+            var de13 = document.getElementById("de13");
+            var de14 = document.getElementById("de14");
+            var de15 = document.getElementById("de15");
+  
+            var dc3 = document.getElementById("dc3");
+            var dc4 = document.getElementById("dc4");
+            var dc5 = document.getElementById("dc5");
+            var dc6 = document.getElementById("dc6");
+            var dc7 = document.getElementById("dc7");
+            var dc8 = document.getElementById("dc8");
+            var dc9 = document.getElementById("dc9");
+            var dc10 = document.getElementById("dc10");
+            var dc11 = document.getElementById("dc11");
+            var dc12 = document.getElementById("dc12");
+            var dc13 = document.getElementById("dc13");
+            var dc14 = document.getElementById("dc14");
+            var dc15 = document.getElementById("dc15");
+  
+  
+            // Need a correction;
+            var check = [be3,be4,be5,be6,be7,be8,be9,be10,be11,be12,be13,be14,be15,
+                        bc3,bc4,bc5,bc6,bc7,bc8,bc9,bc10,bc11,bc12,bc13,bc14,bc15,
+                        de3,de4,de5,de6,de7,de8,de9,de10,de11,de12,de13,de14,de15,
+                        dc3,dc4,dc5,dc6,dc7,dc8,dc9,dc10,dc11,dc12,dc13,dc14,dc15];
+              
+            for(i=0;i<=check.length;i++)
+            {
+              if(check[i].value == "")
+              {            
+                 check[i].parentNode.removeChild(check[i]);
+              }
+  
+            document.getElementById("travel").value = '';
+            document.getElementById("firstname").value = '';
+            document.getElementById("boarding").value = '';
+            document.getElementById("boardingtime").value = '';
+            document.getElementById("droping").value = '';
+            document.getElementById("dropingtime").value = '';
+            // document.getElementById("phonenumber").value = '';
+            document.getElementById("textseat").value = '';
+            document.getElementById("display_error").innerHTML = "";
+            document.getElementById("msg").value = '';
+            document.getElementById("date").value="";
+            document.getElementById("add_button").disabled = false;    
+  
+            }
+  
+         
+            
+        
+        }
+  
+  
+  
+  
+  
+         function Optiondelete(){
+  
+  
+            var travel = document.getElementById("travel").value;
+            document.getElementById("boarding").disabled = false;
+            document.getElementById("droping").disabled = false;
+  
+  
+            
+           if(travel == "t1" )//from erode
+              {  
+                  //delete the boarding @ chennai
+                  var element = document.getElementById("boardingchennai");
+                  element.parentNode.removeChild(element);
+  
+                  //delete the droping @ Erode
+                  var element = document.getElementById("dropingerode");
+                  element.parentNode.removeChild(element);
+                }
+  
+  
+          if(travel == "t2" )// from chennai
+              {
+                //delete the boarding pointc @ Erode 
+                var element = document.getElementById("boardingerode");
+                element.parentNode.removeChild(element);
+                
+                //delete the droping point @ chennai
+                var element = document.getElementById("dropingchennai");
+                element.parentNode.removeChild(element);
+                
+                }
+
+
+
+  
+            
+            var be3 = document.getElementById("be3");
+            var be4 = document.getElementById("be4");
+            var be5 = document.getElementById("be5");
+            var be6 = document.getElementById("be6");
+            var be7 = document.getElementById("be7");
+            var be8 = document.getElementById("be8");
+            var be9 = document.getElementById("be9");
+            var be10 = document.getElementById("be10");
+            var be11 = document.getElementById("be11");
+            var be12 = document.getElementById("be12");
+            var be13 = document.getElementById("be13");
+            var be14 = document.getElementById("be14");
+            var be15 = document.getElementById("be15");
+  
+            var bc3 = document.getElementById("bc3");
+            var bc4 = document.getElementById("bc4");
+            var bc5 = document.getElementById("bc5");
+            var bc6 = document.getElementById("bc6");
+            var bc7 = document.getElementById("bc7");
+            var bc8 = document.getElementById("bc8");
+            var bc9 = document.getElementById("bc9");
+            var bc10 = document.getElementById("bc10");
+            var bc11 = document.getElementById("bc11");
+            var bc12 = document.getElementById("bc12");
+            var bc13 = document.getElementById("bc13");
+            var bc14 = document.getElementById("bc14");
+            var bc15 = document.getElementById("bc15");
+  
+            var de3 = document.getElementById("de3");
+            var de4 = document.getElementById("de4");
+            var de5 = document.getElementById("de5");
+            var de6 = document.getElementById("de6");
+            var de7 = document.getElementById("de7");
+            var de8 = document.getElementById("de8");
+            var de9 = document.getElementById("de9");
+            var de10 = document.getElementById("de10");
+            var de11 = document.getElementById("de11");
+            var de12 = document.getElementById("de12");
+            var de13 = document.getElementById("de13");
+            var de14 = document.getElementById("de14");
+            var de15 = document.getElementById("de15");
+  
+            var dc3 = document.getElementById("dc3");
+            var dc4 = document.getElementById("dc4");
+            var dc5 = document.getElementById("dc5");
+            var dc6 = document.getElementById("dc6");
+            var dc7 = document.getElementById("dc7");
+            var dc8 = document.getElementById("dc8");
+            var dc9 = document.getElementById("dc9");
+            var dc10 = document.getElementById("dc10");
+            var dc11 = document.getElementById("dc11");
+            var dc12 = document.getElementById("dc12");
+            var dc13 = document.getElementById("dc13");
+            var dc14 = document.getElementById("dc14");
+            var dc15 = document.getElementById("dc15");
+  
+  
+            // Need a correction;
+            var check = [be3,be4,be5,be6,be7,be8,be9,be10,be11,be12,be13,be14,be15,
+                        bc3,bc4,bc5,bc6,bc7,bc8,bc9,bc10,bc11,bc12,bc13,bc14,bc15,
+                        de3,de4,de5,de6,de7,de8,de9,de10,de11,de12,de13,de14,de15,
+                        dc3,dc4,dc5,dc6,dc7,dc8,dc9,dc10,dc11,dc12,dc13,dc14,dc15];
+              // not working properly 
+            for(i=0;i<=check.length;i++)
+            {
+              if(check[i].value == "")
+              {            
+                 check[i].parentNode.removeChild(check[i]);
+                 
+              }
+  
+         }
+
+         }
+  
+  
+       function timer(){
+  
+  
+        var timeleft = 12;
+        var downloadTimer = setInterval(function(){
+          
+          if(timeleft <= 0)
+          {
+            clearInterval(downloadTimer);
+            document.getElementById("add_button").disabled = true;
+           
+            document.getElementById("msg").innerHTML = "Finished"; 
+          }
+           else 
+          {
+            document.getElementById("add_button").disabled = true;
+            document.getElementById("msg").innerHTML = timeleft + " seconds remaining ";
+          }
+  
+          timeleft -= 1;
+        }, 1000);
+  
+       }
+  
+        function lit(){
+  
+                var seat1 = document.getElementById("seat1");
+                var seat2 = document.getElementById("seat2");
+                var seat3 = document.getElementById("seat3");
+                var seat4 = document.getElementById("seat4");
+                var seat5 = document.getElementById("seat5");
+                var seat6 = document.getElementById("seat6");
+                var seat7 = document.getElementById("seat7");
+                var seat8 = document.getElementById("seat8");
+                var seat9 = document.getElementById("seat9");
+                var seat10 = document.getElementById("seat10");
+                var seat11 = document.getElementById("seat11");
+                var seat12 = document.getElementById("seat12");
+                var seat13 = document.getElementById("seat13");
+                var seat14 = document.getElementById("seat14");
+                var seat15 = document.getElementById("seat15");
+                var seat16 = document.getElementById("seat16");
+                var seat17 = document.getElementById("seat17");
+                var seat18 = document.getElementById("seat18");
+                var seat19 = document.getElementById("seat19");
+                var seat20 = document.getElementById("seat20");
+                var seat21 = document.getElementById("seat21");
+                var seat22 = document.getElementById("seat22");
+                var seat23 = document.getElementById("seat23");
+                var seat24 = document.getElementById("seat24");
+                var seat25 = document.getElementById("seat25");
+                var seat26 = document.getElementById("seat26");
+                var seat27 = document.getElementById("seat27");
+                var seat28 = document.getElementById("seat28");
+                var seat29 = document.getElementById("seat29");
+                var seat30 = document.getElementById("seat30");
+                var seat31 = document.getElementById("seat31");
+                var seat32 = document.getElementById("seat32");
+                var seat33 = document.getElementById("seat33");
+                var seat34 = document.getElementById("seat34");
+                var seat35 = document.getElementById("seat35");
+                var seat36 = document.getElementById("seat36");
+                var seat37 = document.getElementById("seat37");
+                var seat38 = document.getElementById("seat38");
+                var seat39 = document.getElementById("seat39");
+                var seat40 = document.getElementById("seat40");
+                var seat41 = document.getElementById("seat41");
+                  
+                 var play = [seat1,seat2,seat3,seat4,seat5,seat6,seat7,seat8,seat9,seat10,
+                 seat11,seat12,seat13,seat14,seat15,seat16,seat17,seat18,seat19,seat20,
+                 seat21,seat22,seat23,seat24,seat25,seat26,seat27,seat28,seat29,seat30,
+                 seat31,seat32,seat33,seat34,seat35,seat36,seat37,seat38,seat39,seat40,seat41];
+                 var got = [];
+                 var j = 0;
+  
+                for(i=0;i<play.length;i++)
+                {
+                  if(play[i].checked == true)
+                  {               
+                     got[j] = [play[i].value];
+                     j++;              
+                  }
+                }
+  
+               document.getElementById("selectedseat").value = got;  
+  
+        }
+
+
+
+     
+
+
+        
+          </script>
