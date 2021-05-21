@@ -1,0 +1,487 @@
+<html>
+  <head>
+      <base target="_top">
+      <meta name="viewport" content= "width=device-width", initial-scale="1.0">
+      
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <script src="https://kit.fontawesome.com/a74d0f3882.js" crossorigin="anonymous"></script>
+
+     <?!= include('Stylesheet'); ?> 
+      <?!= include('Javascript'); ?>
+      
+  </head>
+
+  <body onload="ClearRecord()">
+
+      
+      <div class="container">
+				<p class="collapsible manoj">Jolly Share<i class="fas fa-sort-down"></i></p>
+
+				<div class="collapsible-content " id="tablediv">
+					<table id = "table" class="table table-bordered table-hover">
+						<thead>
+							<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Date</th>
+							<th scope="col">Seat</th>                                
+							<th scope="col">Boarding</th>
+							<th scope="col">Droping</th>
+							<th scope="col">Share</th>
+							</tr>
+						</thead> 
+
+						<tbody>
+							<tr>
+							<td id = "jname1"><?= jname1 ?></td>
+							<td id = "jdate1"><?= jdate1 ?></td>
+							<td id = "jseat1"><?= jseat1 ?></td>
+							<td id = "jboarding1"><?= jboarding1 ?></td>
+							<td id = "jdroping1"><?= jdroping1 ?></td>
+							<td id = "jsharing1"><a href= <?= jsharing1 ?>>Click here </a></td>         
+							</tr>
+
+							<tr>
+							<td id = "jname2"><?= jname2 ?></td>
+							<td id = "jdate2"><?= jdate2 ?></td>
+							<td id = "jseat2"><?= jseat2 ?></td>
+							<td id = "jboarding2"><?= jboarding2 ?></td>
+							<td id = "jdroping2"><?= jdroping2 ?></td>
+							<td id = "jsharing2"><a href= <?= jsharing2 ?>>Click here </a></td>         
+							</tr>
+
+							<tr>
+							<td id = "jname3"><?= jname3 ?></td>
+							<td id = "jdate3"><?= jdate3 ?></td>
+							<td id = "jseat3"><?= jseat3 ?></td>
+							<td id = "jboarding3"><?= jboarding3 ?></td>
+							<td id = "jdroping3"><?= jdroping3 ?></td>
+							<td id = "jsharing3"><a href= <?= jsharing3 ?>>Click here </a></td>  		
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="note">** To see your recent data, reload the page.</p>
+				</div>
+			</div> 
+    
+       
+          <div class = "container">
+              <div class = "letters">      
+              <p class ="manoj"> Jolly Ticket </p>
+              <p class="title"> Jolly tours and travels </p>
+              <p class = "red"> * Required </p>
+              </div>
+          </div>
+
+
+          <div class="newbox">
+              <div class="letters">
+              <p class="title"> Name <span class="red">*</span> </p> 
+              <input type ="text" id="firstname" class = "input-field" placeholder="Name "> </input>
+              <div class = "warning" id= "fillfirstname"></div>    
+              </div>
+          </div>
+
+           <div class="newbox">
+              <div class="letters">
+              <p class="title"> From <span class="red">*</span> </p> 
+             	<select id="travel" class="select-field" placeholder="From" onchange ="Optiondelete()"  >
+						    <option  value="t1" >Erode</option>
+						    <option  value="t2" >Chennai</option>                    
+					    </select> 
+              <div class = "warning" id= "filltravel"></div>    
+              </div>
+          </div>
+
+           <div class="newbox">
+              <div class="letters">
+              <p class="title"> Date <span class="red">*</span> </p> 
+              <input type="date" id="date" class="input-field" placeholder="Date" onchange ="hari()" />
+              <div class = "warning" id= "filldate"></div>    
+              </div>
+          </div>
+
+           <div class="newbox">
+              <div class="letters">
+              <p class="title"> Boarding <span class="red">*</span> </p>
+
+              <select name="cars" id="boarding" class="select-field" placeholder="Boarding Point" onchange="saru()">
+								<optgroup id="boardingerode" label="Erode">
+									<option   id="be1"><?= be1 ?></option>
+									<option   id="be2"><?= be2 ?></option>
+									<option   id="be3"><?= be3 ?></option>
+									<option   id="be4"><?= be4 ?></option>
+									<option   id="be5"><?= be5 ?></option>
+									<option   id="be6"><?= be6 ?></option>
+									<option   id="be7"><?= be7 ?></option>
+									<option   id="be8"><?= be8 ?></option>
+									<option   id="be9"><?= be9 ?></option>
+									<option   id="be10"><?= be10 ?></option>
+									<option   id="be11"><?= be11 ?></option>
+									<option   id="be12"><?= be12 ?></option>
+								</optgroup>
+	  
+								<optgroup id ="boardingchennai" label="Chennai">
+									<option   id="bc1" ><?= bc1 ?></option>
+									<option   id="bc2" ><?= bc2 ?></option>
+									<option   id="bc3" ><?= bc3 ?></option>
+									<option   id="bc4" ><?= bc4 ?></option>
+									<option   id="bc5" ><?= bc5 ?></option>
+									<option   id="bc6" ><?= bc6 ?></option>
+									<option   id="bc7" ><?= bc7 ?></option>
+									<option   id="bc8" ><?= bc8 ?></option>
+									<option   id="bc9" ><?= bc9 ?></option>
+									<option   id="bc10" ><?= bc10 ?></option>
+									<option   id="bc11" ><?= bc11 ?></option>
+									<option   id="bc12" ><?= bc12 ?></option>
+									<option   id="bc13" ><?= bc13 ?></option>
+									<option   id="bc14" ><?= bc14 ?></option>
+									<option   id="bc15" ><?= bc15 ?></option>
+								</optgroup>
+						  </select> 
+              <span class="space"></span>
+
+              <input type="time" id="boardingtime" class="select-field" placeholder="Boarding Time" disabled />
+
+              <div class = "warning" id= "fillboarding"></div>    
+              </div>
+          </div>
+
+          <div class="newbox">
+              <div class="letters">
+              <p class="title"> Droping <span class="red">*</span> </p> 
+              <select id="droping" class="select-field" placeholder="Droping Point" onchange= "Mighty()" >
+								<optgroup id="dropingerode" label="Erode">
+									<option   id="de1" ><?= de1 ?></option>
+									<option   id="de2" ><?= de2 ?></option>
+									<option   id="de3" ><?= de3 ?></option>
+									<option   id="de4" ><?= de4 ?></option>
+									<option   id="de5" ><?= de5 ?></option>
+									<option   id="de6" ><?= de6 ?></option>
+									<option   id="de7" ><?= de7 ?></option>
+									<option   id="de8" ><?= de8 ?></option>
+									<option   id="de9" ><?= de9 ?></option>
+									<option   id="de10" ><?= de10 ?></option>
+									<option   id="de11" ><?= de11 ?></option>
+									<option   id="de12" ><?= de12 ?></option>
+								</optgroup>
+	  
+								<optgroup id="dropingchennai" label="Chennai">                      
+									<option   id="dc1" ><?= dc1 ?></option>
+									<option   id="dc2" ><?= dc2 ?></option>
+									<option   id="dc3" ><?= dc3 ?></option>
+									<option   id="dc4" ><?= dc4 ?></option>
+									<option   id="dc5" ><?= dc5 ?></option>
+									<option   id="dc6" ><?= dc6 ?></option>
+									<option   id="dc7" ><?= dc7 ?></option>
+									<option   id="dc8" ><?= dc8 ?></option>
+									<option   id="dc9" ><?= dc9 ?></option>
+									<option   id="dc10" ><?= dc10 ?></option>
+									<option   id="dc11" ><?= dc11 ?></option>
+									<option   id="dc12" ><?= dc12 ?></option>
+									<option   id="dc13" ><?= dc13 ?></option>
+									<option   id="dc14" ><?= dc14 ?></option>
+									<option   id="dc15" ><?= dc15 ?></option>
+								</optgroup>
+							</select>
+
+                 <input type="time" id="dropingtime" class="select-field" placeholder="Droping Time" disabled /> 
+
+                 <div class = "warning" id= "filldroping"></div> 
+              </div>
+          </div>
+
+           <div class="newbox">
+              <div class="letters">
+              <p class="title"> Phone Number <span class="red">*</span> </p> 
+              <input type="tel" id="phonenumber"  class="input-field" placeholder="Phone Number" 
+               value = "7010056XXX (disabled for common use)" disabled> 
+              <div class = "warning" id= "fillphonenumber"></div>    
+              </div>
+          </div>	 
+					
+
+
+            <!--Seat Checkbox-->
+            <div class="newbox">
+              <div class="letters">
+              <p class="title">  Select Seat : <span class="red">*</span> </p> 
+
+            <div class="form-row">
+            <div class = "form-inline">
+            <!--Row 1-->
+            <div>
+              <input type="checkbox" id="seat2" class = "hitu" value="2" onclick="lit()">                                   
+            <label class="seatnumber" > 2 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat3" class = "hitu" value="3" onclick="lit()">                                   
+            <label class="seatnumber" > 3 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat10" class = "hitu" value="10" onclick="lit()">                                   
+            <label class="seatnumber" > 10 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat11" class = "hitu" value="11" onclick="lit()">                                   
+            <label class="seatnumber" > 11 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat18" class = "hitu" value="18" onclick="lit()">                                   
+            <label class="seatnumber" > 18 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat19" class = "hitu" value="19" onclick="lit()">                                   
+            <label class="seatnumber" > 19 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat26" class = "hitu" value="26" onclick="lit()">                                   
+            <label class="seatnumber" > 26 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat27" class = "hitu" value="27" onclick="lit()">                                   
+            <label class="seatnumber" > 27 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat34" class = "hitu" value="34" onclick="lit()">                                   
+            <label class="seatnumber" > 34 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat37" class = "hitu" value="37" onclick="lit()">                                   
+            <label class="seatnumber" > 37 </label>
+            </div>
+            </div>
+
+
+            <!--Row 2-->
+            <div class = "form-inline">
+            <div>
+              <input type="checkbox" id="seat1" class = "hitu" value="1" onclick="lit()">                                   
+            <label class="seatnumber" > 1 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat4" class = "hitu" value="4" onclick="lit()">                                   
+            <label class="seatnumber" > 4 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat9" class = "hitu" value="9" onclick="lit()">                                   
+            <label class="seatnumber" > 9 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat12" class = "hitu" value="12" onclick="lit()">                                   
+            <label class="seatnumber" > 12 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat17" class = "hitu" value="17" onclick="lit()">                                   
+            <label class="seatnumber" > 17 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat20" class = "hitu" value="20" onclick="lit()">                                   
+            <label class="seatnumber" > 20 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat25" class = "hitu" value="25" onclick="lit()">                                   
+            <label class="seatnumber" > 25 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat28" class = "hitu" value="28" onclick="lit()">                                   
+            <label class="seatnumber" > 28 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat33" class = "hitu" value="33" onclick="lit()">                                   
+            <label class="seatnumber" > 33 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat38" class = "hitu" value="38" onclick="lit()">                                   
+            <label class="seatnumber" > 38 </label>
+            </div> 
+            </div>
+
+           <div class = "form-inline row3">
+            <div>
+              <input type="checkbox" id="seat39" class = "hitu" value="39" onclick="lit()">                                   
+              <label class="seatnumber" > 39 </label>
+            </div>
+            </div>
+
+
+            <!--Row 3-->
+            <div class = "form-inline">
+            <div>
+              <input type="checkbox" id="seat35" class = "hitu" value="35" onclick="lit()">                                   
+            <label class="seatnumber" > 35 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat5" class = "hitu" value="5" onclick="lit()">                                   
+            <label class="seatnumber" > 5 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat8" class = "hitu" value="8" onclick="lit()">                                   
+            <label class="seatnumber" > 8 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat13" class = "hitu" value="13" onclick="lit()">                                   
+            <label class="seatnumber" > 13 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat16" class = "hitu" value="16" onclick="lit()">                                   
+            <label class="seatnumber" > 16 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat21" class = "hitu" value="21" onclick="lit()">                                   
+            <label class="seatnumber" > 21 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat24" class = "hitu" value="24" onclick="lit()">                                   
+            <label class="seatnumber" > 24 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat29" class = "hitu" value="29" onclick="lit()">                                   
+            <label class="seatnumber" > 29 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat32" class = "hitu" value="32" onclick="lit()">                                   
+            <label class="seatnumber" > 32 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat40" class = "hitu" value="40" onclick="lit()">                                   
+            <label class="seatnumber" > 40 </label>
+            </div>
+            </div>                      
+
+
+            <!--Row 4-->
+            <div class = "form-inline" style = "margin-bottom: 40px;">
+            <div>
+              <input type="checkbox" id="seat36" class = "hitu" value="36" onclick="lit()">                                   
+            <label class="seatnumber" > 36 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat6" class = "hitu" value="6" onclick="lit()">                                   
+            <label class="seatnumber" > 6 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat7" class = "hitu" value="7" onclick="lit()">                                   
+            <label class="seatnumber" > 7 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat14" class = "hitu" value="14" onclick="lit()">                                   
+            <label class="seatnumber" > 14 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat15" class = "hitu" value="15" onclick="lit()">                                   
+            <label class="seatnumber" > 15 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat22" class = "hitu" value="22" onclick="lit()">                                   
+            <label class="seatnumber" > 22 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat23" class = "hitu" value="23" onclick="lit()">                                   
+            <label class="seatnumber" > 23 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat30" class = "hitu" value="30" onclick="lit()">                                   
+            <label class="seatnumber" > 30 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat31" class = "hitu" value="31" onclick="lit()">                                   
+            <label class="seatnumber" > 31 </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="seat41" class = "hitu" value="41" onclick="lit()">                                   
+            <label class="seatnumber" > 41 </label>
+            </div>
+
+            </div>	
+            </div>
+
+            <input type="text" id="selectedseat" class="input-field" placeholder="Seat No." disabled />
+
+             <div class = "warning" id= "fillseatnumber"></div>    
+              </div>
+          </div>
+				     
+                <div id="display_error" ></div><div id="msg"></div>
+                
+                <!--Buttons-->
+                <div class="from-group buttons">
+                    <input type="button" value="Search" class="btn btn-primary" onclick="hari()" />
+                    <input type="button" value="Submit " class="btn btn-primary" onclick="AddRow()" id="add_button" />
+                    <input type="button" value="Clear Record" class="btn btn-primary" onclick="ClearRecord()" />
+                    
+                    </div>
+
+
+                
+
+               
+              
+            
+
+	
+			 
+ 
+        
+     <!-- For jolly share Click -->
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				  content.style.maxHeight = null;
+				} else {
+				  content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			  });
+			}
+		</script>
+
+	</body>
+</html>
