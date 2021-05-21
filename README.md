@@ -4,8 +4,8 @@ Aim : Create a web app to convert customer's data into Receipt or Ticket.....<br
 Used apps : Google sheet,Google drive<br><hr>
 
 Enter values in app below..... 
-* Web app : <a href = "https://script.google.com/macros/s/AKfycbyNQnVkzICCJm55Qv5JPUOCCwetNZqMOBzaA0PNqSTHPA7FV5KqZOgM5KTenEciMk1chw/exec" target = "blank"> Click Here </a>
-* Google sheet : <a href ="https://docs.google.com/spreadsheets/d/1kRM4E-PnsyW9MJHWSUlVOC8L_Hz21MSITeomazQsMqs/edit?usp=sharing" target = "blank" > Google sheet </a>
+* Web app : <a href = "https://script.google.com/macros/s/AKfycbyNQnVkzICCJm55Qv5JPUOCCwetNZqMOBzaA0PNqSTHPA7FV5KqZOgM5KTenEciMk1chw/exec" target = "_blank"> Click Here </a>
+* Google sheet : <a href ="https://docs.google.com/spreadsheets/d/1kRM4E-PnsyW9MJHWSUlVOC8L_Hz21MSITeomazQsMqs/edit?usp=sharing" target = "_blank" > Google sheet </a>
 
  # Introduction
 *This project is a simple web app for bus owners to Enter customer's detils and share ticket with their customers.<br>
