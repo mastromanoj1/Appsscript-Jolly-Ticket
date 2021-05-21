@@ -3,6 +3,7 @@ Written in : AppsScript , HTML , CSS , JAVASCRIPT .  <br>
 Aim : Create a web app to convert customer's data into Receipt or Ticket.....<br>
 Used apps : Google sheet,Google drive<br><hr>
 
+Enter values in app below..... 
 * Web app : <a href = "https://script.google.com/macros/s/AKfycbyNQnVkzICCJm55Qv5JPUOCCwetNZqMOBzaA0PNqSTHPA7FV5KqZOgM5KTenEciMk1chw/exec"> Click Here </a>
 * Google sheet : <a href ="https://docs.google.com/spreadsheets/d/1kRM4E-PnsyW9MJHWSUlVOC8L_Hz21MSITeomazQsMqs/edit?usp=sharing"> Google sheet </a>
 
