@@ -1,0 +1,254 @@
+// this form is similar to google form style.
+<style>
+
+body{
+  background-color : #f0ebf8;
+  margin : 10px 2cm 50px 50px;
+}
+
+
+.container{
+  background-color : white ;
+  height : auto ;
+  padding : 15px 60px;
+  border-radius: 25px;
+  margin : 20px 0px;
+  border-top: 25px solid #673ab7;  
+}
+
+.letters{
+  font-family: 'Roboto', sans-serif;
+  margin : 60px 0px 30px ;
+  font-size: 0.9cm;
+  font-weight: normal;
+}
+
+
+.manoj{  
+  margin : 0px 0px 10px;
+  font-size: 2cm;
+  font-height :100%;   
+  font-family: 'Roboto', sans-serif;
+}
+
+.title{
+  font-size : 40px;
+}
+
+.red{
+  color:red ;
+}
+
+.newbox{
+  background-color : white ;
+  height : auto ;
+  padding : 20px 60px ;
+  border-radius: 25px;
+  margin : 40px 0px;    
+}
+
+.newbox:hover{
+    border : 2px solid red;  
+}
+
+.input-field{ 
+  height : 30px;
+  margin : 15px 0px;
+  width : 70%;
+  border-style: none;
+  border-bottom: 3px solid lightgrey;
+  font-size : 40px;
+  padding : 20px;
+  background: #ffffff;
+}
+.select-field{ 
+  height : 60px;
+  margin : 15px 0px;
+  width : 40%;
+  font-size : 40px;
+  background: #ffffff;
+}
+
+
+
+.input-field:focus{
+  outline : none ;
+  border-bottom: 3px solid #673ab7;
+}
+
+.warning{
+  color:red;
+  padding : 0px 100px;
+}
+
+.space{
+  width : 10px;
+}
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked {
+    position: absolute;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:disabled + label{
+   color: white;
+  background: red;
+}
+
+input[type="time"]:disabled{
+  background: #bfbdbd;
+}
+
+input[type="tel"]:disabled{
+  background: #bfbdbd;
+}
+
+select:disabled {
+  background: #bfbdbd;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    color: grey;
+    background-color: rgba(255, 0, 255, 0.178);
+    margin-bottom: 10px;
+    transition: 0.3s;
+    text-align: center;
+    margin: 0px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: white;
+    background-color: green;
+    transition: 0.3s;
+}
+
+
+
+
+
+.form-inline div {
+    position: relative;
+    padding: 5px;
+}
+
+.form-inline, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row3{
+   position: static;
+  right: 0px;
+}
+
+.form-inline, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons input {
+    width  : 200px;
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+    margin: 25px 17px 0;
+    cursor: pointer;
+    background-color: #673ab7;
+    transition: .5s;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons input:hover, .buttons input:active {
+    background-color: #9b86bf;
+    transition: .5s;
+}
+
+#display_error{
+  color : red;
+  background-color : #f5abab;
+  font-size : 1cm;
+  text-align : center;
+}
+
+#msg{
+  color : green;
+  background-color : #bfffc5;
+  font-size : 1cm;
+  text-align : center;
+}
+
+
+
+
+
+
+.collapsible-content {
+    width: 90%;
+    height: 430px;
+    margin: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.table {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: left;
+    border: none;
+    border-collapse: separate;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+tr : hover{
+  background-color : green;
+}
+
+tr, th, td {
+    padding: 15px;
+    background-color: lightgrey !important;
+}
+
+p.note {
+    text-align: center;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.table a {
+    color: rgb(78, 49, 243);
+    text-decoration: none;
+}
+
+
+
+
+  </style>
