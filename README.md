@@ -3,6 +3,9 @@ Written in : AppsScript , HTML , CSS , JAVASCRIPT .  <br>
 Aim : Create a web app to convert customer's data into Receipt or Ticket.....<br>
 Used apps : Google sheet,Google drive<br><hr>
 
+* Web app : <a href = "https://script.google.com/macros/s/AKfycbyNQnVkzICCJm55Qv5JPUOCCwetNZqMOBzaA0PNqSTHPA7FV5KqZOgM5KTenEciMk1chw/exec"> Click Here </a>
+* Google sheet : <a href ="https://docs.google.com/spreadsheets/d/1kRM4E-PnsyW9MJHWSUlVOC8L_Hz21MSITeomazQsMqs/edit?usp=sharing"> Google sheet </a>
+
  # Introduction
 *This project is a simple web app for bus owners to Enter customer's detils and share ticket with their customers.<br>
 
@@ -11,3 +14,7 @@ Used apps : Google sheet,Google drive<br><hr>
 *The Data is saved in a row in google sheets. <br>
 *Then the saved data is alinged in certain format in another sheet and saved as pdf in Google drive . <br>
 *The link to the pdf is placed in a row repective to customer name.<br>
+
+# Web-App Link
+
+
