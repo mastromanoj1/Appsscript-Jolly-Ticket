@@ -14,7 +14,8 @@ Enter values in app below.....
 *Owner can enter customer details along with preloaded data such as boarding point and droping point,which is saved in the one of the sheets. <br>
 *The Data is saved in a row in google sheets. <br>
 *Then the saved data is alinged in certain format in another sheet and saved as pdf in Google drive . <br>
-*The link to the pdf is placed in a row repective to customer name.<br>
+*The link to the pdf is placed in a row respective to customer name.<br>
+*click jolly share to view the receipt.
 
 # Update Required
 * this project needs a update...
